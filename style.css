@@ -1,0 +1,195 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #111;
+    direction: rtl;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #111;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.top-bar img {
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+}
+
+.search-bar input {
+    padding: 4px 10px;
+    /* زيادة الحشو لزيادة المساحة الداخلية */
+    font-size: 18px;
+    /* تكبير الخط عشان يكون واضح */
+    width: 750px;
+    /* عرض أكبر حسب ما تبي */
+    border-radius: 10000px;
+    /* لو حابب تضيف انحناء بسيط */
+    border: none;
+    /* لو حابب تخلي بدون إطار */
+    box-sizing: border-box;
+    /* لتأكد أن الحشو داخل العرض */
+}
+
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(204, 2, 2);
+}
+
+.navbar {
+    background: rgb(204, 2, 2);
+    padding: 10px;
+    text-align: right;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.section {
+    padding: 150px;
+}
+
+.title {
+    border-bottom: 2px solid rgb(255, 2, 2);
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+}
+
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.card {
+    width: 200px;
+    background: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.work-name {
+    font-family: 'Cairo', sans-serif;
+    /* خط عربي واضح وجميل */
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-top: -5px;
+    padding: 6px;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.featured-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.featured-card {
+    width: 320px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.featured-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 20px;
+}
+
+.featured-card:hover img {
+    transform: scale(1.03);
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+    user-select: none;
+}
+
+.nav-arrow:focus {
+    outline: none;
+}
+
+.featured-image {
+    width: 1%;
+    height: 104%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.featured-image:hover {
+    transform: scale(1.02);
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.work-name-s {
+    font-family: 'Cairo', sans-serif;
+    /* خط عربي واضح وجميل */
+    font-size: 16px;
+    color: #f1f1f1;
+    margin-top: -5px;
+    padding: 6px;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

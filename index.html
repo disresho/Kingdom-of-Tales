@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YZ - Team</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- الترويسة -->
+    <header>
+        <div class="top-bar">
+            <img src="assets/logo/logo.png" alt="شعار الموقع">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder=" بحث                                                                                                                                      🔎" />
+
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">الرئيسة</a>
+            <a href="manhwa.html">المانهوا</a>
+            <a href="manga.html">المانغا</a>
+            <a href="novel.html">الرواية</a>
+            <a href="donate.html">التبرع</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+
+        <section class="featured-section">
+            <button id="prev-btn" class="nav-arrow">&lt;</button>
+            <div id="featured-card" class="featured-card"></div>
+            <button id="next-btn" class="nav-arrow">&gt;</button>
+        </section>
+
+        <section class="section">
+            <h2 class="title">الأكثر مشاهدة</h2>
+            <div class="card-slider" id="most-viewed"></div>
+            <div class="pagination" id="most-viewed-pagination"></div>
+        </section>
+
+        <section class="section">
+            <h2 class="title">الكل</h2>
+            <div class="card-slider" id="all-content"></div>
+            <div class="pagination" id="main-pagination"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
